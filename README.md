@@ -6,27 +6,27 @@ A collection of VBA code that I have collected over the years.
 
 Probably the most heavily used of all my VBA.
 
-*ConcatenateCells()*
+**ConcatenateCells()**
 
 Assign this to a keyboard shortcut, and then merge all the selected cells into the top left of the range by concantenating all the cells into a single string seperated with spaces. Excellent when copying and pasting proposal RFPs into excel..
 
-*TextToSingleLine()*
+**TextToSingleLine()**
 
 Assign this to a keyboard shortcut, and then for each selected cell, converts CR to space.
 
-*MatrixLU()*
+**MatrixLU()**
 
 A shortcut for the MATCH() and INDEX() method. Use it to lookup a value from a table given the row and column headings.
 
-*lastRow()* and *lastCol()*
+**lastRow()** and **lastCol()**
 
 Returns the number of the last row or column of the sheet that has data in it
 
-*getURL()*
+**getURL()**
 
 Extracts the plain text URL for the given cell
 
-* FOREX()*
+**FOREX()**
 
 A shortcut for vlookup(). Pass it the name of the currency "XXX", and the range of the table that contains the data.
 
