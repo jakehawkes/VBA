@@ -30,6 +30,12 @@ Extracts the plain text URL for the given cell
 
 A shortcut for vlookup(). Pass it the name of the currency "XXX", and the range of the table that contains the data.
 
+## Chart Automation 
+
+Code to automatically modify the axis max/min settings of chart objects. Careful with this one, something in it may sometimes break Excel's undo function or its goal seek function. A bug was reported to Microsoft about it, and there solution was not to use this function if you want those things to work! However, I think I fixed it by commenting out the `Application.Volatile True` statement. [According to Microsoft] [ms-kb] this turns off the execution of this function whenever anything changes in the workbook, which is fine by me, and apparantly is the source of the above bugs...
+
+[ms-kb]: https://docs.microsoft.com/en-us/office/vba/api/Excel.Application.Volatile "Microsoft VBA Documentation"
+
 ## Lat Long Functions
 
 Mostly not working, this was an initial attempt to do great circle calculations in excel.
